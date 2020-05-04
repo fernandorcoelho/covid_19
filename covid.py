@@ -86,7 +86,7 @@ fig.autofmt_xdate()
 # ---- PLOT LETHALITY RATE -----
 # Defining x and y
 # x_dates already defined
-# Handling with divisions by zero deaths (VOLTAR AQUI!!)
+# Handling with divisions by zero deaths
 df_no_0cases = df_group_region.query('deaths > 0')
 df_no_0cases['lethality rate (%)'] = (df_no_0cases['deaths']/df_no_0cases['cases'])*100
 y_lethality_rate = df_no_0cases['lethality rate (%)']

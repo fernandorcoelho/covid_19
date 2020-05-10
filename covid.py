@@ -13,7 +13,7 @@ register_matplotlib_converters()
 # Authenticate API, Download and Unzip the CSV file from Kaggle
 kaggle.api.authenticate()
 kaggle.api.dataset_download_files('unanimad/corona-virus-brazil',
-                                  'C:/Users/Usuario/Desktop/Nando/data_projects/brazil/covid_download',
+                                  'C:/Users/Usuario/Desktop/Nando/data_projects/covid_19/covid_download',
                                   unzip = True)
 
 # Load the CSV file to df
